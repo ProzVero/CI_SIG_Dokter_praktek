@@ -76,9 +76,9 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'username' => 'root', //prozvero_api
+	'password' => '', //i7XxZ=;[e5nJ
+	'database' => 'ci_sig_dokter_praktek', //prozvero_ci_sig_dokter_praktek
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
