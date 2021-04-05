@@ -38,7 +38,7 @@ class Dokter extends REST_Controller {
         // json response array
         $response = array("error" => FALSE);
         //menerima parameter get
-        $stmt = $this->db->query("SELECT * from dokter_praktek");
+        $stmt = $this->db->query("SELECT * from dokter_praktek left join kategori on dokter_praktek.id_kategori = kategori.id_kategori");
         if (($stmt->num_rows()) > 0) {
             // user ada
             $response["error"] = FALSE;
